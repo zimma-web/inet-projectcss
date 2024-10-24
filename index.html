@@ -187,7 +187,6 @@
             const html = document.documentElement;
             const isDark = html.classList.contains('dark');
             const themeIcon = document.querySelector('.theme-toggle i');
-            
             if (isDark) {
                 html.classList.remove('dark');
                 themeIcon.classList.remove('fa-sun');
@@ -205,7 +204,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme');
             const themeIcon = document.querySelector('.theme-toggle i');
-            
             if (savedTheme === 'dark') {
                 document.documentElement.classList.add('dark');
                 themeIcon.classList.remove('fa-moon');
@@ -215,7 +213,7 @@
 
         // WhatsApp Order Function
         function orderPackage(packageName) {
-            const phoneNumber = '6281234567890';
+            const phoneNumber = '6283131133098';
             const message = `Halo, saya tertarik dengan paket ${packageName}. Mohon informasi lebih lanjut.`;
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappURL, '_blank');
@@ -235,16 +233,14 @@
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('.background-slides .slide');
             let currentSlide = 0;
-    
             function showNextSlide() {
                 slides[currentSlide].classList.remove('active');
                 currentSlide = (currentSlide + 1) % slides.length;
                 slides[currentSlide].classList.add('active');
             }
-    
             setInterval(showNextSlide, 5000); // Change slide every 5 seconds
         });
     </script>
-    
 </body>
 </html>
+
